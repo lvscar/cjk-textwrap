@@ -1,5 +1,8 @@
 ## CJK Textwrap
 
+![PyPI](https://img.shields.io/pypi/v/cjk-textwrap) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cjk-textwrap) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/cjk-textwrap)
+
+
 `cjk-textwrap`是Python 3.6`textwrap`模块的[中日韩字符](https://en.wikipedia.org/wiki/CJK_characters)兼容版本。此外，它提供了灵活的接口以便用户自定义分词器（如[结巴分词](https://github.com/fxsjy/jieba)）。
 
 `cjk-textwrap` is a [CJK characters](https://en.wikipedia.org/wiki/CJK_characters) compatible version of Python 3.6's `textwrap` module. Moreover, it provides flexible interfaces which allows users to define their own text segmentation for text wrapping like [jieba](https://github.com/fxsjy/jieba).
