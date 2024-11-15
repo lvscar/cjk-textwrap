@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import re
-import jieba
+import jieba3
 # modified from Python 3.10's textwrap.py
 # https://github.com/python/cpython/blob/3.10/Lib/textwrap.py
 
@@ -15,6 +15,7 @@ __all__ = ['TextWrapper', 'wrap', 'fill', 'dedent', 'indent', 'shorten']
 # some Unicode spaces (like \u00a0) are non-breaking whitespaces.
 _whitespace = '\t\n\x0b\x0c\r '
 
+jieba_tokenizer = jieba3.jieba3()
 
 class TextWrapper:
     """
@@ -170,7 +171,7 @@ class TextWrapper:
         """_split(text : string) -> [string]
         core function, split cjk sentence into indivisible chunks.
         """
-        chunks = list(jieba.cut(text, cut_all=False))
+        chunks = list(jieba_tokenizer.cut_text(text))
         return chunks
 
     def _split(self, text):
